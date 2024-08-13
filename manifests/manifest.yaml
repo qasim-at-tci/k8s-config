@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: api
-  name: api
+  name: backend
   namespace: app
 spec:
   replicas: 3
@@ -22,7 +22,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: test-app-svc
+  name: backend-svc
   namespace: app
 spec:
   type: NodePort
